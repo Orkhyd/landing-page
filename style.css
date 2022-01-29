@@ -1,22 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* Flex Part */
 .wrapper, html, body{
 
     height: 100%;
-}
-.header, .hero{
-    background-color: #1F2937;
-    color: #F9F4F8;
+    margin: 0px;
 }
 
-.header, .content, .footer{
+.flexy{
     flex: 1;
 
 }
-
-.wrapper{
+.content.flexy{
+    flex: 5;
+}
+.main.flexy{
+    flex: 3;
+}
+.header.flexy, .footer.flexy{
+    flex:0 1 auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper, .content, .main{
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
 }
-.content{
+
+/* Main Div Design */
+.quote{
+    background-color: #e5e7eb;
+}
+
+.header, .hero, .footer{
+    background-color: #1F2937;
+    color: #F9F4F8;
+}
+
+.header p{
+    font-size: 24px;
+    font-weight: bolder;
+    flex: auto;
+    margin-left: 10%;
+}
+.header ul{
+    list-style-type: none;
     display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #e5e7eb;
+    font-size: 18px;
+    flex: auto;
+    justify-content: flex-end;
+    margin-right:10% ;
+}
+*{
+    font-family: "roboto";
 }
