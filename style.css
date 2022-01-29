@@ -1,0 +1,22 @@
+.wrapper, html, body{
+
+    height: 100%;
+}
+.header, .hero{
+    background-color: #1F2937;
+    color: #F9F4F8;
+}
+
+.header, .content, .footer{
+    flex: 1;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.content{
+    display: flex;
+}
